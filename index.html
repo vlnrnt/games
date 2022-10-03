@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="top center">
+      <h1 class="title">Добро пожаловать на мой сайт !</h1>
+      <p class="title__text">
+        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+        <span class="title__text_big">поехали</span> и
+        <span class="title__text_big">приступай</span>
+      </p>
+      <a href="#box center"><button class="title__button">Поехали!</button></a>
+    </div>
+    <div class="box center" id="box center">
+      <a class="link__game" href="#gameFirst">
+        <div class="game game_1">
+          <p class="game__text">Игра 1</p>
+        </div>
+      </a>
+      <a class="link__game" href="#gameSecond">
+        <div class="game game_2">
+          <p class="game__text">Игра 2</p>
+        </div>
+      </a>
+      <a class="link__game" href="#gameThird">
+        <div class="game game_3">
+          <p class="game__text">Игра 3</p>
+        </div>
+      </a>
+    </div>
+    <div class="gamebox center" id="gameFirst">
+      <div class="gamebox__info">
+        <h2 class="title__games">Времена года!</h2>
+        <p class="title__text title__text_game">
+          Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+          к какому времени года он относится
+        </p>
+        <button
+          onclick="firstGame();"
+          class="title__button title__button_game1"
+        >
+          Играть!
+        </button>
+      </div>
+      <div class="picture__box">
+        <img
+          class="picture__image"
+          src="img/game1 pic.png"
+          alt="game picture"
+        />
+      </div>
+    </div>
+    <div class="gamebox words center" id="gameSecond">
+      <div class="gamebox__info">
+        <h2 class="title__games">Запомни слова</h2>
+        <p class="title__text title__text_game">
+          При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+          необходимо запомнить.
+        </p>
+        <button
+          onclick="secondGame();"
+          class="title__button title__button_game1"
+        >
+          Играть!
+        </button>
+      </div>
+      <div class="picture__box">
+        <img class="picture__image" src="img/game2.svg" alt="game picture" />
+      </div>
+    </div>
+    <div class="gamebox puzzle center" id="gameThird">
+      <div class="gamebox__info puzzle_info">
+        <h2 class="title__games">Игра в загадки</h2>
+        <p class="title__text title__text_game puzzle_text">
+          Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+          дадите не правильный ответ, то компьютер даст вам подсказку. У вас
+          будет три попытки и две подсказки.
+        </p>
+        <button
+          onclick="thirdGame();"
+          class="title__button title__button_game1"
+        >
+          Играть!
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="#box center"><h2 class="footer__end">назад в меню игр</h2></a>
+      Все права защищены
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
